@@ -554,6 +554,12 @@
 }
 
 /* End Testimonial Block *
+/* Start Brand Block */
+.brand-logo {
+    padding: 20px;
+}
+
+/* End Brand Block */
 /* Start Footer Top */
 .footer-top-outer {
     display: block;
