@@ -41,30 +41,109 @@ a {
 }
 
 /* Start header */
-.header-bottom {
+.main-header-top {
     display: block;
-    clear: both;
-    margin: 30px 0;
-    background-color: #051829;
+    background: #fafafa;
+    border-bottom: none;
+    margin: 0;
 }
 
-.menu-inner {
+.header-top {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
 }
 
-.menu-inner>li {
+.header-top .right {
+    display: flex;
+}
+
+.header-top .right .contact-info {
+    display: inline-block;
+    padding: 9px 0;
+}
+
+.header-top .right .contact-info a {
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-top .right .user-info {
+    margin: 9px 0 0 15px;
+}
+
+.header-top .right .user-info span {
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fa-phone::before {
+    color: #333;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.fa-chevron-down::before {
+    color: #333;
+    line-height: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.header-bottom {
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+
+.header-bottom .logo {
     display: block;
+}
+
+.header-bottom .menu-inner {
+    display: block;
+}
+
+.header-bottom .logo img {
+    display: block;
+    margin-top: 20px;
+}
+
+.header-bottom .menu-inner>li {
+    margin: 25px 10px 25px 0;
+    display: inline-block;
     position: relative;
 }
 
-.menu-inner li a {
-    display: block;
-    padding: 15px 20px;
-    font-size: 20px;
-    font-weight: 500px;
+.menu-inner li {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    position: relative;
+}
+
+.header-top .left .menu-inner li a {
+    cursor: pointer;
+    font-size: 14px;
+    color: #333333;
     text-transform: capitalize;
-    color: #ffffff;
+}
+
+.header-bottom .menu-inner>li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #333333;
+    line-height: 24px;
+    text-transform: capitalize;
 }
 
 .menu-inner li .sub-menu {
